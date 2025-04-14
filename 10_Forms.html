@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <!-- To use form tag simply write form without writing angular brackets simply types form and hit enter when the vs code will suggest you about the form tag-->
+
+    <!-- Whenever we use a form tag in html it ask us about the action for the form tag so that it can be stored in the backend ,simply means ki form ki details backend mai kaha store hongi. -->
+
+    <!-- Inside of the form tag we have the input tag which is used to take different type input from the user in the form  -->
+
+
+     <form action="backend.php">
+        <!-- input tag se pehle jo bhi hum likhenge wo webpage mein waise hi likha ayega , jaise ki yahan par humne Name likha hai to web page par Name likha ayega aur uske aage hum text input kar sakte hai -->
+
+        <!-- Humne input tags ko div k andar isliye dala hai kyu ki div ek block element hai aur hame sare input tags alag alag line par chahiye , hum div ki jagah <br> tag ka use bhi kar sakte the for line break but humne div ka use kiya hai kyu ki div ko use karna recommended hai -->
+
+        <!-- For extra spacing i have used br  -->
+
+        <!-- Here the attribute name inside the input tag is used to uniquely identify the data in the backend for example Agar user Name enter karega to backend mai wo myName karke save ho jayega so input k saath name dena jaruri hai-->
+
+        <!-- Label tag -->
+        <!-- label tag ko simply type kare label fir press enter aur aapko syntax mil jayega -->
+        <!-- In label tag inside the for value of label tag enter the id of the element which you want to associate with label  -->
+        <!-- jaise hi aap for k andar id dalenge aur label mein ek text likhenge to jaise hi user us text par click karega to user seedha us element pe chala jayega . -->
+        <!-- Please go and check the output of this to understand the label tag -->
+        
+        
+        <div><label for="1">Name</label><input type="text" name = "myName" id ="1"></div> <br>
+        <div>RollNo:<input type="number" name = "myRollNo"></div><br>
+        <div>Email:<input type="email" name ="myEmail"></div><br>
+        <div>Date:<input type = "date" name = "myDate"></div><br>
+        <!-- Yaha par name same hai jiski wajah se ek baar  -->
+        <div>Gender:Male<input type="radio" name = "myGender">Female<input type = "radio" name = "myGender">Other <input type="radio" name = "myGender"><br>
+        <div>Are you eligible:<input type="checkbox"></div>
+        <div>Choose any one:<input type="checkbox" name = "choose">Car <input type="checkbox" name="choose" >Bike <input type="checkbox" name = "choose">Aeroplane</div>
+      
+     </form>
+</body>
+</html>
